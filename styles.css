@@ -9,7 +9,8 @@
 }
 
 body {
-  background: linear-gradient(to top, #303030 7.97%, #000 99.3%)
+  background: linear-gradient(to top, #303030 7.97%, #000 99.3%);
+  background-attachment: fixed;
   color: white;
   font-family: "RobotoLight";
 }
@@ -41,6 +42,7 @@ section h2 {
 .loginForm {
   position: relative;
   width: 100%;
+  caret-color: white;
 }
 
 .emailForm {
@@ -61,6 +63,7 @@ section h2 {
   border-bottom: 2px solid white;
   outline: none;
   background: transparent;
+  color: white;
 }
 
 .loginLabel {
@@ -112,9 +115,22 @@ input:hover + label {
   width: 70%;
   aspect-ratio: 14/2;
   border: none;
+  cursor: pointer;
 }
 
-div .register {
+.scaleEffect:hover {
+  scale: 1.05;
+}
+
+.registerContainer {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.registerContainer span a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  /* position: absolute; */
 }
