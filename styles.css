@@ -124,14 +124,18 @@ input:hover + label {
 }
 
 .registerContainer {
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.registerContainer span a {
+.registerContainer a {
   color: white;
-  text-decoration: none;
-  font-weight: bold;
+  text-decoration: underline;
   letter-spacing: 0.8px;
   /* position: absolute; */
+  display: inline;
 }
