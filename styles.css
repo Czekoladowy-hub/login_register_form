@@ -21,12 +21,10 @@ section {
 
 .loginBox {
   border: 3px solid white;
-  border-radius: 10px;
+  border-radius: 16px;
   margin-top: 20vh;
   width: 400px;
-
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -37,7 +35,7 @@ section h2 {
   font-size: 2.2rem;
   letter-spacing: 3px;
   padding: 0px;
-  margin: 2rem 0rem 2.5rem 0rem;
+  margin: 3rem 0rem 2.5rem 0rem;
 }
 
 .loginForm {
@@ -50,7 +48,7 @@ section h2 {
 }
 
 .passwordForm {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .loginInput {
@@ -94,7 +92,8 @@ input:hover + label {
   justify-content: space-between;
 }
 
-.smallContainer a {
+.smallContainer a,
+.register a {
   color: white;
   text-decoration: none;
 }
@@ -102,7 +101,7 @@ input:hover + label {
 .logInContainer {
   display: flex;
   justify-content: center;
-  padding: 2rem 0px;
+  padding: 5rem 0px 3rem 0px;
 }
 
 .logInButton {
@@ -117,5 +116,5 @@ input:hover + label {
 
 div .register {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
