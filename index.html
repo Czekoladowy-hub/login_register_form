@@ -15,16 +15,35 @@
     <section>
       <div class="loginBox">
         <h2>Login</h2>
-        <form action="#">
-          <input type="email" name="userEmail" id="email" required />
-          <label for="email">Email</label>
+        <form class="loginForm emailForm" action="#">
+          <input
+            class="loginInput"
+            type="email"
+            name="userEmail"
+            id="email"
+            required
+          />
+          <label class="loginLabel" for="email">Email</label>
           <span class="material-symbols-outlined"> mail </span>
         </form>
-        <form action="#">
-          <input type="password" mame="userPassword" id="password" required />
-          <label for="password">Password</label>
+        <form class="loginForm passwordForm" action="#">
+          <input
+            class="loginInput"
+            type="password"
+            mame="userPassword"
+            id="password"
+            required
+          />
+          <label class="loginLabel" for="password">Password</label>
           <span class="material-symbols-outlined"> lock </span>
         </form>
+        <div class="smallContainer">
+          <form class="rememberMeFrom">
+            <label for="#"><input type="checkbox" /> Remember Me</label>
+          </form>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button class="logInButton">Log In</button>
       </div>
     </section>
   </body>
