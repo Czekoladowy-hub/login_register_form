@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.loginBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  margin-top: 20vh;
+  width: 50vw;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin: 1rem auto;
+  letter-spacing: 3px;
+  padding: 0px;
+  margin: 2rem 0rem 2.5rem 0rem;
+}
+
+form {
+  position: relative;
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
+input {
+  position: relative;
+  height: 2rem;
+  font-size: 1.2rem;
+  margin: 0px 1rem;
+  width: calc(100% - 2rem);
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+label {
+  position: absolute;
+  font-size: 1.2rem;
+  left: 1rem;
+  bottom: 0.4rem;
+  transition-duration: 0.7s;
+}
+
+input:focus + label,
+input:valid + label,
+input:hover + label {
+  transform: translateY(-2rem);
+}
+
+span {
+  position: absolute;
+  right: 1rem;
+  bottom: 0px;
+  font-size: 1rem;
+  padding-bottom: 0.4rem;
+}
