@@ -120,6 +120,7 @@ input:hover + label {
 
 .scaleEffect:hover {
   scale: 1.05;
+  font-weight: bold;
 }
 
 .registerContainer {
