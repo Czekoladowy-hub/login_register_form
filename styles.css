@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "DMSansItalic";
+  src: url(fonts/DM_Sans/DMSans-Italic.ttf);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -6,6 +11,7 @@
 body {
   background-color: rgb(131, 168, 166);
   color: white;
+  font-family: "DMSansItalic";
 }
 
 section {
@@ -18,12 +24,17 @@ section {
   border-radius: 10px;
   margin-top: 20vh;
   width: 400px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 section h2 {
   text-align: center;
   font-size: 2.2rem;
-  margin: 1rem auto;
   letter-spacing: 3px;
   padding: 0px;
   margin: 2rem 0rem 2.5rem 0rem;
@@ -68,17 +79,17 @@ input:hover + label {
   transform: translateY(-2rem);
 }
 
-span {
+.loginForm span {
   position: absolute;
   right: 1rem;
   bottom: 0px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding-bottom: 0.4rem;
 }
 
 .smallContainer {
   font-size: 1.1rem;
-  margin: 0px 1rem;
+  margin: 0px 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -86,4 +97,25 @@ span {
 .smallContainer a {
   color: white;
   text-decoration: none;
+}
+
+.logInContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0px;
+}
+
+.logInButton {
+  font-family: "DMSansItalic";
+  font-size: 1rem;
+  margin: 0;
+  border-radius: 16px;
+  width: 70%;
+  aspect-ratio: 14/2;
+  border: none;
+}
+
+div .register {
+  text-align: center;
+  margin-bottom: 1rem;
 }
