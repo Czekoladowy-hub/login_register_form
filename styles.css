@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: rgb(131, 168, 166);
+  background: linear-gradient(to top, #303030 7.97%, #000 99.3%)
   color: white;
   font-family: "RobotoLight";
 }
