@@ -10,12 +10,14 @@
 
 html {
   font-size: 16px;
+  --main-font-color: black;
+  --main-blue-color: #1463f3; //Blue Ribbon
 }
 
 body {
-  background: linear-gradient(to top, #303030 7.97%, #000 99.3%);
+  background-color: rgb(245, 245, 245);
   background-attachment: fixed;
-  color: white;
+  color: var(--main-font-color);
   font-family: "RobotoLight";
 }
 
@@ -25,8 +27,8 @@ section {
 }
 
 .loginBox {
-  border: 3px solid white;
-  border-radius: 5px;
+  border: 1px solid var(--main-font-color);
+  border-radius: 2px;
   margin-top: 20vh;
   width: 400px;
   background: rgba(255, 255, 255, 0.08);
@@ -37,24 +39,29 @@ section {
 
 section h2 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   letter-spacing: 3px;
   padding: 0px;
-  margin: 3rem 0rem 2.5rem 0rem;
+  margin: 3rem 0rem 4rem 0rem;
 }
 
 .loginForm {
   position: relative;
   width: 100%;
-  caret-color: white;
+  caret-color: var(--main-font-color);
 }
 
 .emailForm {
-  margin-bottom: 3.2rem;
+  margin-bottom: 4rem;
 }
 
 .passwordForm {
   margin-bottom: 1.5rem;
+}
+
+input.checkBox {
+  width: 1rem;
+  aspect-ratio: 1;
 }
 
 .loginInput {
@@ -64,10 +71,10 @@ section h2 {
   margin: 0px 1rem;
   width: calc(100% - 2rem);
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--main-font-color);
   outline: none;
   background: transparent;
-  color: white;
+  color: var(--main-font-color);
 }
 
 .loginLabel {
@@ -101,8 +108,12 @@ input:hover + label {
 
 .smallContainer a,
 .register a {
-  color: white;
+  color: var(--main-blue-color);
   text-decoration: none;
+}
+
+.forgotPassword {
+  color: var(--main-blue-color);
 }
 
 .logInContainer {
@@ -111,11 +122,20 @@ input:hover + label {
   padding: 5rem 0px 3rem 0px;
 }
 
+input[type="checkbox"] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+  left: -3px;
+}
+
 .logInButton {
   font-family: "RobotoLight";
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0;
-  border-radius: 5px;
+  background-color: var(--main-blue-color);
+  color: white;
+  border-radius: 2px;
   width: 70%;
   aspect-ratio: 14/2;
   border: none;
@@ -137,7 +157,7 @@ input:hover + label {
 }
 
 .registerContainer a {
-  color: white;
+  color: var(--main-blue-color);
   text-decoration: underline;
   letter-spacing: 0.8px;
   /* position: absolute; */
