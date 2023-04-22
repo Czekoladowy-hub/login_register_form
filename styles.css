@@ -148,6 +148,10 @@ input[type="password"]:valid + label {
   gap: 5px;
 }
 
+.rememberMeContainer input {
+  cursor: pointer;
+}
+
 .forgotPasswordContainer {
   flex: 1;
   text-align: right;
