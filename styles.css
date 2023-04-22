@@ -36,7 +36,6 @@ body {
 
 .logoContainer {
   margin: 5rem auto;
-  border: 1px solid red;
 }
 
 .logoContainer img {
@@ -161,4 +160,18 @@ input[type="password"]:invalid + label {
 
 .registerLink a {
   letter-spacing: 1px;
+}
+
+/* Styling forgotPassword and register links */
+
+a {
+  color: var(--main-blue-color);
+  text-decoration: none;
+}
+
+a:hover {
+  display: block;
+  scale: 1.05;
+  font-weight: 600;
+  transform: translateY(-0.1rem);
 }
