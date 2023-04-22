@@ -54,61 +54,32 @@ body {
   padding: 0 auto;
 }
 
-/* Styling email form */
+/* Styling email and password form */
 
-.emailContainer {
+.emailContainer,
+.passwordContainer {
   position: relative;
   margin: 0 1rem 5rem 1rem;
 }
 
-.emailContainer input {
-  font-size: 1.2rem;
-  color: var(--main-font-color);
-  background: transparent;
-  width: 100%;
-  font-family: "RobotoLight";
-  margin: 0 auto;
-  height: 1.5rem;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--main-font-color);
-}
-
-.emailContainer label {
-  position: absolute;
-  font-size: 1.2rem;
-  left: 0;
-  bottom: 0.25rem;
-  transition-duration: 0.35s;
-}
-
-.emailContainer span {
-  position: absolute;
-  right: 0;
-  bottom: 0.1rem;
-  font-size: 1.3rem;
-}
-
-/* Styling password form */
-
 .passwordContainer {
-  position: relative;
-  margin: 0 1rem 1.6rem 1rem;
+  margin-bottom: 0.6rem;
 }
 
+.emailContainer input,
 .passwordContainer input {
   font-size: 1.2rem;
-  font-family: "RobotoLight";
   color: var(--main-font-color);
   background: transparent;
   width: 100%;
-  margin: 0 auto;
+  font-family: "RobotoLight";
   height: 1.5rem;
   border: none;
   outline: none;
   border-bottom: 1px solid var(--main-font-color);
 }
 
+.emailContainer label,
 .passwordContainer label {
   position: absolute;
   font-size: 1.2rem;
@@ -117,21 +88,19 @@ body {
   transition-duration: 0.35s;
 }
 
+.emailContainer span,
 .passwordContainer span {
   position: absolute;
   right: 0;
-  bottom: 0.15rem;
+  bottom: 0.1rem;
   font-size: 1.3rem;
 }
 
 /* Adding animations to email and password labels */
 
-input[type="email"]:hover + label,
-input[type="password"]:hover + label,
-input[type="email"]:focus + label,
-input[type="password"]:focus + label,
-input[type="email"]:valid + label,
-input[type="password"]:valid + label {
+input:hover + label,
+input:focus + label,
+input:valid + label {
   transform: translateY(-2rem);
 }
 
