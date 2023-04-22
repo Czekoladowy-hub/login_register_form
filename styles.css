@@ -27,7 +27,7 @@ body {
 
 .mainContainer {
   border: 1px solid black;
-  width: 40vw;
+  width: 400px;
   display: flex;
   flex-direction: column;
 }
