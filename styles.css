@@ -42,3 +42,30 @@ body {
   display: block;
   padding: 0 auto;
 }
+
+.emailContainer {
+  position: relative;
+  margin: 0 1rem 5rem 1rem;
+}
+
+.emailContainer input {
+  width: 100%;
+  margin: 0 auto;
+  height: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--main-font-color);
+}
+
+.emailContainer label {
+  position: absolute;
+  left: 0;
+  bottom: 0.25rem;
+}
+
+.emailContainer span {
+  position: absolute;
+  right: 0;
+  bottom: 0.1rem;
+  font-size: 1.3rem;
+}
