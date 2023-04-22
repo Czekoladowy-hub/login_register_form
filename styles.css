@@ -149,3 +149,16 @@ input[type="password"]:invalid + label {
   display: block;
   margin: 0 auto;
 }
+
+/* Styling registerContainer */
+
+.registerContainer {
+  display: flex;
+  margin: 0 1rem 2rem 1rem;
+  justify-content: center;
+  gap: 5px;
+}
+
+.registerLink a {
+  letter-spacing: 1px;
+}
