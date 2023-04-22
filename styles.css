@@ -102,3 +102,14 @@ body {
   bottom: 0.15rem;
   font-size: 1.3rem;
 }
+
+/* Adding animations to email and password labels */
+
+input[type="email"]:hover + label,
+input[type="password"]:hover + label,
+input[type="email"]:active + label,
+input[type="password"]:active + label,
+input[type="email"]:invalid + label,
+input[type="password"]:invalid + label {
+  transform: translateY(-2rem);
+}
