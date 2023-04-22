@@ -26,7 +26,16 @@ body {
 }
 
 .mainContainer {
-  border: 1px solid rgb(0, 0, 0);
+  background: rgb(244, 244, 244);
+  background: radial-gradient(
+    circle,
+    rgba(244, 244, 244, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  box-shadow: 0px 0px 15px 5px rgba(244, 244, 244, 1);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(244, 244, 244, 1);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(244, 244, 244, 1);
+  border: 1px solid rgb(233, 233, 233);
   border-radius: 2px;
   width: 400px;
   display: flex;
@@ -36,7 +45,7 @@ body {
 /* Styling logo  */
 
 .logoContainer {
-  margin: 5rem auto;
+  margin: 3rem auto 4rem auto;
 }
 
 .logoContainer img {
@@ -53,7 +62,11 @@ body {
 }
 
 .emailContainer input {
+  font-size: 1.2rem;
+  color: var(--main-font-color);
+  background: transparent;
   width: 100%;
+  font-family: "RobotoLight";
   margin: 0 auto;
   height: 1.5rem;
   border: none;
@@ -63,8 +76,10 @@ body {
 
 .emailContainer label {
   position: absolute;
+  font-size: 1.2rem;
   left: 0;
   bottom: 0.25rem;
+  transition-duration: 0.35s;
 }
 
 .emailContainer span {
@@ -78,10 +93,14 @@ body {
 
 .passwordContainer {
   position: relative;
-  margin: 0 1rem 5rem 1rem;
+  margin: 0 1rem 1.6rem 1rem;
 }
 
 .passwordContainer input {
+  font-size: 1.2rem;
+  font-family: "RobotoLight";
+  color: var(--main-font-color);
+  background: transparent;
   width: 100%;
   margin: 0 auto;
   height: 1.5rem;
@@ -92,8 +111,10 @@ body {
 
 .passwordContainer label {
   position: absolute;
+  font-size: 1.2rem;
   left: 0;
   bottom: 0.25rem;
+  transition-duration: 0.35s;
 }
 
 .passwordContainer span {
@@ -107,10 +128,10 @@ body {
 
 input[type="email"]:hover + label,
 input[type="password"]:hover + label,
-input[type="email"]:active + label,
-input[type="password"]:active + label,
-input[type="email"]:invalid + label,
-input[type="password"]:invalid + label {
+input[type="email"]:focus + label,
+input[type="password"]:focus + label,
+input[type="email"]:valid + label,
+input[type="password"]:valid + label {
   transform: translateY(-2rem);
 }
 
@@ -135,7 +156,7 @@ input[type="password"]:invalid + label {
 /* Styling Log In button */
 
 .loginBtnContainer {
-  margin: 0 1rem 5rem 1rem;
+  margin: 0 1rem 3rem 1rem;
 }
 
 .loginBtnContainer button {
@@ -148,6 +169,12 @@ input[type="password"]:invalid + label {
   border-radius: 2px;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.loginBtnContainer button:hover {
+  font-weight: 600;
 }
 
 /* Styling registerContainer */
