@@ -113,3 +113,23 @@ input[type="email"]:invalid + label,
 input[type="password"]:invalid + label {
   transform: translateY(-2rem);
 }
+
+/* Styling rememberMeForgotPasswordContainer */
+
+.rememberMeForgotPasswordContainer {
+  margin: 0 1rem;
+  display: flex;
+  border: 1px solid blue;
+}
+
+.rememberMeContainer {
+  display: flex;
+  gap: 5px;
+  border: 1px solid green;
+  flex: 1;
+}
+
+.forgotPasswordContainer {
+  flex: 1;
+  text-align: right;
+}
