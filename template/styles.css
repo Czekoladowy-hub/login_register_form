@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "RobotoLight";
+  src: url(fonts/Roboto/Roboto-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-font-color: rgb(77, 77, 77);
+  --main-blue-color: #1463f3;
+}
+
+body {
+  font-family: "RobotoLight";
+  color: var(--main-font-color);
+}
+
+.topMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.topMenuLeft {
+  border: 1px solid red;
+  flex: 1;
+}
+.topMenuRight {
+  border: 1px solid green;
+  flex: 9;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem 1rem 0;
+  gap: 50px;
+  letter-spacing: 0.7px;
+  font-size: 1.15rem;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profilePicture img {
+  display: block;
+  width: 50px;
+  border-radius: 1000px;
+}
