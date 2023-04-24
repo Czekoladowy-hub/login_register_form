@@ -1,1 +1,76 @@
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --bar-gap: 6px;
+  --hamburger-margin: 10px;
+  --animation-timing: 300ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--bar-gap) * 2);
+}
 
+.hamburger-menu {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: var(--bar-gap);
+  position: absolute;
+  left: var(--hamburger-margin);
+  top: var(--hamburger-margin);
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  z-index: 2;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  background-color: white;
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  pointer-events: none;
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.hamburger-menu:has(input:checked):before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked):after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.sidebar {
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 82px;
+  height: calc(100vh - 82px);
+  width: 200px;
+  background-color: #263544;
+  transition: translate var(--animation-timing);
+  translate: -100%;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
