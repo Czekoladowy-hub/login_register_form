@@ -10,8 +10,13 @@
 }
 
 :root {
-  --main-font-color: rgb(77, 77, 77);
+  --main-font-color: #263544;
   --main-blue-color: #1463f3;
+  --top-menu-right-padding: 1rem;
+  --user-profile-image-height: 3rem;
+  --top-menu-height: calc(
+    (var(--user-profile-image-height) + (var(--top-menu-right-padding) * 2))
+  );
 }
 
 body {
@@ -28,16 +33,18 @@ body {
 
 .topMenuLeft {
   background-color: #263544;
-  width: 200px;
+  width: var(--hamburger-menu-closed);
+  transition: width var(--animation-timing);
 }
 
 .topMenuRight {
-  flex: 9;
+  flex: 1;
   background-color: rgb(250, 250, 250);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1rem 2rem 1rem 0;
+  padding: var(--top-menu-right-padding);
+  padding-right: 0;
   gap: 50px;
   letter-spacing: 0.7px;
   font-size: 1.15rem;
@@ -47,10 +54,23 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  padding-right: 2rem;
 }
 
 .profilePicture img {
   display: block;
-  width: 50px;
+  height: var(--user-profile-image-height);
   border-radius: 1000px;
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.sidebar-icons span {
+  font-size: 3rem;
 }
